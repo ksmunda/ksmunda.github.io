@@ -1,151 +1,42 @@
-# 👋 Hi, I'm Kulveer Singh
+# sv
 
-## Technical Project Manager | Senior Full Stack Developer | Laravel Expert
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-Welcome to my official portfolio repository. I'm a passionate software professional with **15+ years of experience** in designing, developing, and delivering scalable web, mobile, and enterprise applications.
+## Creating a project
 
-Currently, I work as a **Technical Project Manager**, leading cross-functional development teams while actively contributing to software architecture, backend development, code reviews, and technical solution design.
+If you're seeing this, you've probably already done this step. Congrats!
 
----
+```sh
+# create a new project
+npx sv create my-app
+```
 
-## 🚀 About Me
+To recreate this project with the same configuration:
 
-- 💼 Technical Project Manager & Senior Full Stack Developer
-- 🏢 Founder of **NUVRO Technologies**
-- 🌍 Based in India
-- 💻 15+ Years of Software Development Experience
-- ✅ Delivered 150+ Successful Projects
-- 👥 Led Agile Development Teams
-- ☁️ AWS & Docker Enthusiast
+```sh
+# recreate this project
+npx sv@0.16.3 create --template minimal --types ts --add tailwindcss="plugins:none" sveltekit-adapter="adapter:static" --no-download-check --install npm .
+```
 
----
+## Developing
 
-# 🛠️ Technical Skills
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-### Backend
-- Laravel
-- PHP
-- CodeIgniter
-- Node.js
-- Express.js
-- REST APIs
+```sh
+npm run dev
 
-### Frontend
-- React.js
-- JavaScript (ES6+)
-- HTML5
-- CSS3
-- Bootstrap
-- Tailwind CSS
-- jQuery
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-### Mobile
-- Flutter
-- React Native
-- Swift
+## Building
 
-### Database
-- MySQL
-- MongoDB
-- SQLite
+To create a production version of your app:
 
-### DevOps & Cloud
-- Docker
-- AWS EC2
-- AWS S3
-- Linux
-- Apache
-- Git
-- GitHub
-- Bitbucket
+```sh
+npm run build
+```
 
-### CMS
-- WordPress
-- WooCommerce
-- Plugin Development
-- Theme Development
+You can preview the production build with `npm run preview`.
 
-### AI Tools
-- ChatGPT
-- GitHub Copilot
-- Google Gemini
-- Claude AI
-
----
-
-# 💼 Professional Experience
-
-## Technical Project Manager
-**Omega Broadcast Technologies Pvt. Ltd.**
-
-- Leading enterprise software projects
-- Managing Agile teams
-- Architecture planning
-- Code reviews
-- Sprint planning
-- Technical decision making
-- Backend development
-
----
-
-# 📌 Featured Projects
-
-- 🎓 School Management System
-- 🏥 Hospital Management System
-- 📦 Inventory Management System
-- 💰 Finance Management System
-- 👨‍💼 HRMS
-- 📚 LMS
-- 🛒 E-Commerce Platform
-- 🚢 Merchant Navy Recruitment Portal
-- 📹 Video Calling Platform
-- 🚗 OBD Service Platform
-- 📱 QR Attendance System
-- 🏢 Organization Management System
-- 🧘 Wellness Platform
-- 📈 Business Automation Solutions
-
----
-
-# 📊 Highlights
-
-- ✅ 15+ Years Experience
-- ✅ 150+ Projects Delivered
-- ✅ Enterprise Software Specialist
-- ✅ Laravel Expert
-- ✅ Full Stack Developer
-- ✅ Technical Project Manager
-- ✅ Team Leader & Mentor
-
----
-
-# 🌐 Portfolio
-
-Visit my portfolio:
-
-**https://kulveersingh.github.io**
-
----
-
-# 📫 Connect With Me
-
-- 💼 LinkedIn: https://www.linkedin.com/in/kulveer-singh/
-- 📧 Email: ksmunda@gmail.com
-- 🌐 Website: https://kulveersingh.github.io
-
----
-
-# 🤝 Open To
-
-- Full-Time Opportunities
-- Remote Opportunities
-- Technical Project Management
-- Software Architecture
-- Laravel Development
-- Full Stack Development
-- Technical Consulting
-- Freelance Projects
-
----
-
-## ⭐ If you like my work, please consider giving this repository a star!
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
