@@ -1,0 +1,16 @@
+{
+  "name": "Kulveer Singh Portfolio",
+  "short_name": "Kulveer",
+  "description": "Technical Project Manager & Senior Full Stack Developer Portfolio",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#09090B",
+  "theme_color": "#09090B",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
