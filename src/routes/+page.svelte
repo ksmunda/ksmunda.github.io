@@ -12,7 +12,7 @@
   import Footer from '$lib/components/Footer.svelte';
   import { personalInfo } from '$lib/data/portfolio';
 
-  const siteUrl = 'https://ksmunda.github.io/kulveersingh.github.io';
+  const siteUrl = 'https://ksmunda.github.io';
   const metaDescription = `${personalInfo.name} is an experienced ${personalInfo.title} and Founder of ${personalInfo.company}, specializing in high-performance enterprise systems, database design, cloud deployments, and agile leadership.`;
   
   // Structured JSON-LD Data
